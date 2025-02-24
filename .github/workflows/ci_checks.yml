@@ -17,8 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: dtolnay/rust-toolchain@stable
-    with:
-          target: thumbv8m.main-none-eabihf
+      with:
+        target: thumbv8m.main-none-eabihf
     - run: cargo install flip-link
     - run: cargo build --all
     - run: cargo build --all --release
